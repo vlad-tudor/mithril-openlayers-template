@@ -16,8 +16,6 @@
     "noEmit": true,
     "noEmitOnError": false,
     "jsx": "preserve",
-    //"jsx": "react",
-    "outDir": "./dist/",
     "noImplicitAny": true
   },
   "include": ["src", "dist"]
