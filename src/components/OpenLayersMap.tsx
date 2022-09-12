@@ -25,6 +25,15 @@ type OpenLayersMapState = {
   pending?: boolean;
 };
 
+const blink: Comp<{ blink: (p: any) => true }> = {
+  oncreate(vnode) {
+    vnode.attrs.blink(vnode.dom);
+  },
+  view: () => {
+    return m("div", "blink");
+  },
+};
+
 const OpenLayersMap: Comp<{}, OpenLayersMapState> = {
   openLayersMap: null,
   layers: {
